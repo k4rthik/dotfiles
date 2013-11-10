@@ -1,5 +1,3 @@
-dotfiles
-========
 
 ##Karthik's dotfiles
 
