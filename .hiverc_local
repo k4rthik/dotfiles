@@ -1,0 +1,4 @@
+set hive.exec.mode.local.auto=true;
+set mapred.local.dir=/tmp/hive-local-${env:USER};
+set mapreduce.jobtracker.staging.root.dir=/tmp/hive-local-${env:USER}/staging;
+set hive.exec.mode.local.auto.inputbytes.max=1000000000;

@@ -1,0 +1,22 @@
+(require-package 'markdown-mode )
+(add-to-list 'auto-mode-alist '("\\.text\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
+
+(define-prefix-command 'md-map nil "Markdown-")
+(define-key md-map "l" 'markdown-insert-link)
+(define-key md-map "u" 'markdown-insert-uri)
+(define-key md-map "f" 'markdown-insert-footnote)
+(define-key md-map "p" 'markdown-insert-image)
+(define-key md-map "h1" 'markdown-insert-header-atx-1)
+(define-key md-map "h2" 'markdown-insert-header-atx-2)
+(define-key md-map "hd" 'markdown-insert-header-dwim) 
+(define-key md-map "i" 'markdown-insert-italic)
+(define-key md-map "c" 'markdown-insert-code)
+(define-key md-map "b" 'markdown-insert-bold)
+(define-key md-map "i" 'markdown-insert-italic)
+(define-key md-map "hr" 'markdown-insert-hr)
+(global-set-key "\C-i" md-map)
+
+(provide 'init-markdown)

@@ -1,0 +1,8 @@
+if [[ $# -eq 0 ]] ; then
+    echo 'Usage: rmm <dir_to_delete>'
+    exit 0
+fi
+dir=$1
+mkdir -p /tmp/empty_dir
+rsync -a --delete /tmp/empty_dir/ $dir
+rm -rf $dir

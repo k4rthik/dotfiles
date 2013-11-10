@@ -1,0 +1,56 @@
+[core]
+	excludesfile = ~/.gitignore_global
+	whitespace = cr-at-eol
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+[mergetool "sourcetree"]
+	cmd = /Volumes/SourceTree/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+
+[alias]
+    lg = log --graph --pretty=oneline --abbrev-commit --all --decorate
+    lat = log --graph --pretty=format:'%C(yellow)%h %Cred%ad %C(yellow)%an%Cgreen%d %Creset%s' --date=relative
+    lk = log --author=karthik
+    st = status --untracked-files=no
+    br = branch
+    co = checkout
+    cp = cherry-pick
+    cm = commit -m
+    pr = pull --rebase
+    c  = commit
+    rb = rebase
+    rh = reset --hard HEAD
+    d  = diff
+    ds = diff --stat
+    dsc= diff --stat --cached
+    dcs= diff --stat --cached
+    dc = diff --cached
+[color]
+   diff=auto
+   status=auto
+   branch=auto
+   interactive=auto
+   ui=true
+   pager=true
+
+[apply]
+   whitespace=fix
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+
+[push]
+	default = matching
