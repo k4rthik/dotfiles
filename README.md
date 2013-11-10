@@ -3,7 +3,7 @@ dotfiles
 
 ##Karthik's dotfiles
 
-This is yet another dotfiles repository mostly customized for myself over the last 1-2 years. Some of the snippets are copied from other repositories, I  mentioned them in the comments of source files, Thank you all.
+This is yet another dotfiles repository mostly customized for myself over the last 1-2 years. Some of the snippets are copied from other repositories, I  mentioned them in the comments of source files, Thanks to all who open sourced their configurations.
 
 Overview:
 
