@@ -118,7 +118,11 @@ else
   # Clone Repo
   notice "Downloading"
   git clone --recursive git://github.com/k4rthik/dotfiles.git $HOME/.dotfiles
-
+  if [ $? != 0 ]; then
+    error "Could not git clone, dying"
+    exit -1
+  fi
+  
   pushd $HOME/.dotfiles
 
   # Backup
