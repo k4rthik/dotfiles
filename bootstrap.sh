@@ -34,7 +34,7 @@ dep() {
 
 backup() {
   mkdir -p $backupdir
-
+  cd $HOME/.dotfiles
   local files=( $(ls -a) )
   for file in "${files[@]}"; do
       if [ -e $HOME/$file ]; then
