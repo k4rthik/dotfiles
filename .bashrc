@@ -1,7 +1,7 @@
 #export stuff
 export PATH=$PATH:$HOME/.bin
 
-if [ -x "$(which "brew")" ]; then
+if [ -x "$(which "brew" 2>/dev/null)" ]; then
     export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
     #tab complete more commands
     if [ -f $(brew --prefix)/etc/bash_completion ]; then
