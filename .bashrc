@@ -1,5 +1,5 @@
 #export stuff
-export PATH=$PATH:$HOME/.bin
+export PATH=/usr/local/bin:$PATH:$HOME/.bin
 
 if [ -x "$(which "brew" 2>/dev/null)" ]; then
     export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
