@@ -71,6 +71,9 @@ alias brs='brew search'
 alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias localip='ipconfig getifaddr en1'
 
+#https://gist.github.com/k4rthik/8001723
+for cmd in $(compgen -c); do if [[ $cmd =~ ^[0-9a-zA-Z]+$ ]]; then eval "alias $cmd?='man $cmd'"; fi; done
+
 # work related stuff
 if [ -f $HOME/.bash_aliases_work ]; then
     source $HOME/.bash_aliases_work
