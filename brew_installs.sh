@@ -22,5 +22,6 @@ brew install tmux
 brew install fuse4x
 brew install mysql
 brew install bash-completion
+brew install parallel
 
 brew cleanup
