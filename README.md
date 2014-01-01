@@ -1,11 +1,11 @@
-
 ##Karthik's dotfiles
 
 This is yet another dotfiles repository mostly customized for myself over the last 1-2 years. Some of the snippets are copied from other repositories, I  mentioned them in the comments of source files, Thanks to all who open sourced their configurations.
 
 Overview:
 
-* Support for perl, python using Emacs
+* Editor I use: Emacs
+* Programming languages: Perl, Python 
 * A lot of aliases, decent tmux conf
 * Seperate work related stuff ( I find it painful to seperate them later when needed )
 * Script to install few utils using brew on OS X
