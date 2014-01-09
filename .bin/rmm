@@ -4,5 +4,5 @@ if [[ $# -eq 0 ]] ; then
 fi
 dir=$1
 mkdir -p /tmp/empty_dir
-rsync -a --delete /tmp/empty_dir/ $dir
+rsync -rlptD --delete /tmp/empty_dir/ $dir
 rm -rf $dir
