@@ -7,6 +7,7 @@ alias ll='ls -al'
 alias l='ls -a'
 alias lss='ls -al | sort -k5nr'
 alias grep='grep --color'
+alias pss='ps axo user,pid,ppid,stat,pcpu,pmem,vsz,rss,start,comm | grep'
 alias notes='cat $MY_HOME/.notes'
 
 # Let sudo use these too
