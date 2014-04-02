@@ -25,6 +25,8 @@
     dsc= diff --stat --cached
     dcs= diff --stat --cached
     dc = diff --cached
+    s  = show
+    ss = show --stat
 [color]
    diff=auto
    status=auto
