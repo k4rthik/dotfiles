@@ -68,10 +68,6 @@ alias brm='brew uninstall'
 alias brls='brew list'
 alias brs='brew search'
 
-# IP addresses
-alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
-alias localip='ipconfig getifaddr en1'
-
 #https://gist.github.com/k4rthik/8001723
 for cmd in $(compgen -c); do if [[ $cmd =~ ^[0-9a-zA-Z]+$ ]]; then eval "alias $cmd?='man $cmd'"; fi; done
 
