@@ -3,6 +3,7 @@
 (require 'package)
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
+(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
 
 (package-initialize)
 (when (not package-archive-contents)
@@ -12,6 +13,7 @@
                       starter-kit-lisp
                       starter-kit-bindings
                       starter-kit-eshell
+                      scala-mode2
                       haskell-mode
                       go-mode
                       color-theme
@@ -21,7 +23,7 @@
 
 (dolist (p my-packages)
   (when (not (package-installed-p p))
-    (package-install p)))
+    (package-refresh-contents) (package-install p)))
 
 
 ;;; On-demand installation of packages
